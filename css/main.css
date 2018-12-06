@@ -1,0 +1,1553 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+	background: #fff;
+	font-size: 14px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-size: 0.875em;
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;	
+}
+
+#about, #work, #contact {
+	height: 300px;
+}
+
+/******GRID******/
+
+.full-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	width: 95%;
+	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	
+}
+
+.half-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 0;
+	
+}
+
+.third-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 0;
+}
+
+/****** END GRID ******/
+
+/****** HEADER ******/
+
+header  {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+header .full-width, header .full-width .half-width {
+	clear: both;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	display: block;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+.parallax {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fabian.jpg) ;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	height: 90%;
+	width: 95%;
+	margin: 0 2.5%;
+}
+
+/***** PARALLAX ******/
+
+.parallax-colorado, .parallax2,
+.parallax3 {
+	height: 200px;
+	width: 95%;
+	opacity: 0.8;
+	display: flex;
+	margin: 0 2.5%;
+}
+
+.parallax-colorado {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/20180602_155131.jpg") ;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-color: #ff7e70;
+}
+
+.parallax2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/../img/20180725_175100.jpg) ;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.parallax3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/../img/../img/20180701_143013.jpg) ;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.space{
+		height: 3.5vh;
+	}
+
+.third-width h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.143em;
+    margin: auto;
+	color: #f9b7b7;
+	opacity: 0.7;
+}
+
+/******* NAVIGATION (not needed) ******
+
+	#navBttn {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 3em;
+		width: 230px;
+		height: 70px;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		padding-bottom: 10px;
+	}
+
+#aboutBttn {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2em;
+		width: 230px;
+		height: 30px;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		padding-bottom: 10px;
+	}
+
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-weight: 600;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+nav ul li{
+    display: block;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+nav ul li a {
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    color: #f9b7b7;
+	font-family: 'Permanent Marker', cursive;
+}
+
+******/
+
+i {
+	padding-right: 5px;
+}
+
+
+header h2 {
+  	width: 96%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.143em;
+    margin: 0;
+	color: #fff;
+	opacity: 0.5;
+}
+
+
+.none {
+	display: none;
+}
+
+/****** GALLERY ******/
+
+
+.hvr-curl-top-left { /****** makes the Photos curl ******/
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+div.gallery {
+	margin-bottom: 15px;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	
+}
+
+div.gallery:hover {
+	opacity: 0.5;
+   
+}
+
+div.gallery img {
+    width: 100%;
+	margin-left: 2.5%;
+    height: auto;
+}
+
+
+div.desc {
+	display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/****** END GALLERY ******/
+
+#work .full-width .responsive {
+    padding: 0 ;
+    float: left;
+    width: 90%;
+	height: 100%;
+}
+
+doggy .full-width .responsive {
+    padding: 0 15px;
+    float: left;
+    width: 70%;
+	height: auto;
+}
+
+#doggy div.gallery {
+	width: 200px;
+}
+
+#doggy div.gallery img {
+	height:350px;
+	width: 200px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#art div.gllarry img {
+	width : 80vw;
+	margin-left: 10%;
+}
+
+
+#about {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	flex-flow: column wrap;
+	height: 100%;
+	max-height: 150px;
+	width: 100%;
+	margin-top: 90px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	padding-bottom: 40px;
+}
+
+#about .full-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	
+}
+
+
+#aboutLink {
+	background-color: #fff;
+	height: 50vh;
+	
+}
+
+#intro{
+	opacity: 0;
+}
+
+#aboutLink h2 {
+	color: #1c9298;
+	font-size: 6.5vw;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	margin: 0;
+	line-height: 5.5vh;
+	padding: 4.5vh 5vw 5vh 5vw;
+	opacity: 0.9;
+
+}
+
+/****** WORK ******/
+
+#work {
+		display: none;
+	}
+
+#work:hover {
+	height: 100%;
+}
+
+#work {
+	width: 95%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+	text-align: center;
+	margin:auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	background-color: #fff;
+	padding-bottom: 25px;
+	
+}
+
+#work .full-width  {
+	width: 95%;
+	height: 20%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	background-color: #fff;
+}
+
+#work h2, #art h2 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3.57em;
+	text-align: center;
+	color: #C420A5;
+	opacity: 0.5;
+	text-transform: capitalize;
+	margin: 0;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+
+.parallax2:hover {
+  opacity: 1;
+	height: 350px;
+	transition: 1.5s;
+}
+
+.parallax-colorado:hover{
+	opacity: 1;
+	height: 350px;
+	transition: 1.5s;
+}
+
+.parallax3:hover {
+  opacity: 1;
+	height: 350px;
+	transition: 1.5s;
+}
+
+.text {
+	position: absolute;
+	left: 30%;
+	font-size: 6.5vw;
+	margin: 0 auto;
+	color: rgb(215,146,146);
+	font-family: 'Permanent Marker', cursive;
+}
+
+
+.dropdown1, .dropdown2, .dropdown3 {
+	margin: auto;
+	text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin-top: auto;
+	opacity: 0;
+}
+
+.parallax-colorado:hover .dropdown1  {
+	opacity: 1;
+	transition: 4.5s;
+}
+
+.dropdown1:active .parallax-colorado {
+	height: 30px;
+}
+
+	
+.parallax2:hover .dropdown2  {
+	opacity: 1;
+	transition: 4.5s;
+}
+
+.dropdown2:active .parallax2{
+	height: 45px;
+}
+
+.parallax3:hover .dropdown3  {
+	opacity: 1;
+	transition: 4.5s;
+}
+
+.dropdown3:active .parallax3{
+	height: 30px;
+}
+
+#outdoorBttn:hover, #doggyBttn:hover, #artBttn:hover{
+	color: #fff;
+}	
+
+#outdoorBttn, #doggyBttn, #artBttn {
+		font-family: 'Permanent Marker', cursive;
+		background-color: transparent;
+		color: #f9b7b7;
+		outline:hidden;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin:auto;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		font-size: 10.5vw;
+	}
+
+#outdoorBttnup, #doggyBttnup, #artBttnup {
+		font-family: 'Permanent Marker', cursive;
+		width: 100%;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		padding-bottom: 10px;
+		font-size: 8.5vw;
+	}
+	
+
+#doggy {
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+	text-align: center;
+	margin:auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	background-color: #fff;
+	margin-top: 30px;
+
+}
+
+#doggy .full-width  {
+	width: 95%;
+	height: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	background-color: #fff;
+}
+
+#doggy h2 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3.57em;
+	text-align: center;
+	color: #C420A5;
+	opacity: 0.5;
+	text-transform: capitalize;
+	margin: 0;
+	padding-bottom: 15px;
+}
+
+
+
+/****** CONTACT *****/
+
+#contact {
+	background-color: #514454;
+	opacity: 0.8;
+	height: 100%;
+	width: 95%;
+	margin: 0 2.5%;
+}
+
+
+#contact .full-width .half-width {
+	padding-top: 2.5%;
+		display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	
+}
+
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+	text-align: center;
+	margin: auto;
+}
+
+#contact h2 {
+	padding-top: 30px;
+    font-family: 'Lora', serif;
+    font-size: 2.571em;
+    line-height: 30px;
+	font-color: #f5f1a7;
+}
+
+#contact #email-header{
+	width: 95%;
+    font-size: 2.286em;
+    font-weight: lighter;
+    line-height: 50px;
+    margin: 30px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+    font-weight: bolder;
+    font-size: 2.071em;
+    line-height: 40px;
+    margin: 30px 0 0 0;
+}
+
+ #email  {
+    text-decoration: none;
+    color: #f5f1a7;
+    font-weight: bold;
+    font-size: 1.8em;
+	padding-left: 70px;
+}
+
+#contact ul {
+	list-style: none;
+	
+}
+
+#contact ul li {
+	display: inline-block
+}
+
+#contact ul img {
+	font-size: 2.286em;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media all and (min-width:940px) {
+    /* DESKTOP */
+	
+	.third-width {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	width: 50%;
+	height: 10%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 0;
+}
+	
+	
+	html {
+		font-size: 16px;
+	}
+	
+	header .half-width{
+		width: 50%;
+	}
+	
+	.parallax {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/20180602_155343.jpg);
+		height: 80%;
+		background-repeat: no-repeat;
+    	background-position: bottom; 
+		background-size: cover;
+		position: relative;
+		
+	}
+	/****** HEADER ******/
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+	
+	header .full-width, header .full-width .half-width {
+	clear: both;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+	
+
+.third-width h1 {
+	font-size: 2.5em;
+	padding: 2.5% 0 2.5% 0;
+}
+	
+	#navBttn {
+		width: 230px;
+		height: 70px;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		margin-left: 220px;
+	}
+/**** NAVIGATION*****
+nav {
+    float: right; 
+	margin-left: 750px;
+	align-items: center;
+	display: flex;
+	justify-content:center;
+	font-weight: 600;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+nav ul li{
+    display: block;
+	text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;;  
+	
+}*****/
+
+header h2 {
+    width: 100%;
+    clear: both;
+    font-family: 'Lora', serif; 
+    font-size: 4.5em;
+    line-height: 85px;
+    color: #cc3399;
+    padding: 20px 0 20px 25px;
+}
+
+header .hi {
+	font-family: 'Permanent Marker', cursive;
+    color: #fff;
+}
+	
+.none {
+	display: initial;
+}
+	
+
+	/****** Main ******/
+	
+.parallax-colorado, .parallax2,
+.parallax3 {
+	height: 150px;
+	width: 95%;
+	margin-left: 2.5%;
+}
+	
+	.space{
+		height: 1vw;
+	}
+
+.parallax-colorado {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/20180602_155131.jpg") ;
+	background-position: center;
+	background-repeat: no-repeat;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	padding-top: 60px;
+}
+
+#aboutLink .full-width {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	
+}
+
+
+	#aboutLink {
+		background-color: #fff;
+		height: 20vw;
+	}
+
+#aboutLink h2 {
+	color: #1c9298;
+	font-size: 3vw;
+	text-align: center;
+	margin: 0;
+	line-height: 4.5vw;
+	padding: 0 5vw 5.5vw 5vw;
+	opacity: 0.9;
+}
+
+	
+	.dropdown1, .dropdown2, .dropdown3{
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-flow:row wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin-top: 10%;
+	}
+	
+	.dropdown3{
+		margin-top: 20%;
+	}
+	
+	.dropdownup {
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-flow:row wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin-top: 2.5vw;
+	
+	}
+	
+
+	#outdoorBttn, #doggyBttn {
+		font-family: 'Permanent Marker', cursive;
+		width: 100%;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		padding-bottom: 10px;
+		margin-top: 100px;
+		font-size: 2.5vw;
+	}
+	
+	#artBttn{
+		font-family: 'Permanent Marker', cursive;
+		width: 100%;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		padding-bottom: 10px;
+		margin-top: 15%;
+		font-size: 2.5vw;
+	}
+	
+	#outdoorBttnup, #doggyBttnup, #artBttnup {
+		font-family: 'Permanent Marker', cursive;
+		width: 100%;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		padding-bottom: 10px;
+		font-size: 2.5vw;
+	}
+	
+	
+		
+/****** WORK ******/
+
+#work {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-flow:row wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: 0;
+}
+	
+	#work div.gallery img {
+    	width: 100%;
+		margin-left: 5.5%;
+    	height: auto;
+	}
+	
+	#work {
+		display: none;
+	}
+	
+	#art div.gallery img {
+    	width: 95%;
+		margin-left: 5.5%;
+    	height: auto;
+	}
+	
+	#doggy, #doggy .full-width, #doggy .responsive {
+		display: inherit;
+	}
+
+doggy .full-width .responsive {
+    padding: 0 15px;
+    float: left;
+    width: 50%;
+	height: auto;
+}
+
+#doggy div.gallery {
+	width: 200px;
+}
+
+#doggy div.gallery img {
+	width: 100%;
+	height: 50%;
+	/**height:350px;
+	width: 225px;**/
+}
+
+#work .full-width {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content:center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: inline-block;
+	background-color: #fff;
+	margin: 0;
+}
+
+	
+#doggy {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-flow:row wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: inline-block;
+}
+	
+
+#doggy .full-width {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content:center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: inline-block;
+	background-color: #fff;
+}
+
+/****** CONTACT *****/
+
+#contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	background-color: #514454;
+	height: 85%;
+	margin: auto;
+}
+
+
+	/***
+	#contact .half-width {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	}
+
+.contact-image-bg {
+	width: 100%;
+	height: 100%;
+	max-width: 450px;
+   padding-bottom: 50%;
+   float: left;
+}***/
+
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+#contact #email-header{
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 50px;
+
+}
+
+#contact #socialmedia-header {
+    font-weight: bolder;
+    font-size: 29px;
+    line-height: 50px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#contact ul {
+	list-style: none;
+}
+
+#contact ul li {
+	display: inline-block
+}
+
+#contact ul img {
+	font-size: 32px;
+	padding-right: 48px;
+}
+
+}
+
+/****** TABLET******/
+@media all and (min-width: 768px) and (max-width:939px){
+
+/******** HEADER ********/	
+	header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+	
+	header .full-width, header .full-width .half-width {
+	clear: both;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	display: block;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+	
+	header .full-width {
+		width: 100%;
+	}
+	
+	header .half-width {
+		width: 50%;
+	}
+	
+/******** END HEADER ********/	
+	
+/******** PARALLAX IMAGES ********/
+	
+	.parallax {
+		height: 80%;
+	}
+	
+	.parallax-colorado, .parallax2,
+	.parallax3 {
+	height: 250px;
+	width: 95%;
+	margin-left: 2.5%;
+	}
+	
+/******** END PARALLAX IMAGES ********/
+	
+	#aboutLink h2 { /****** Quote ******/
+		font-size: 6vw;
+		line-height: 6.5vh;
+		width: 95%;
+		margin: 0 2.5vw;
+		margin-bottom: 2.5vh;
+		opacity: 0.8;
+	}
+	
+/******** DROPDOWN WINDOWS ********/
+	
+	.dropdown1 {
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-flow:row wrap;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin-top: 110px;
+	}
+	
+	.dropdown2 {
+	margin: auto;
+	text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: auto;
+	padding-top: 310px;
+	}
+	
+	.dropdown3 {
+	margin: auto;
+	text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	margin: auto;
+	padding-top: 310px;
+	}
+
+	#outdoorBttn {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 4em;
+		width: 230px;
+		color: #f9b7b7;
+		background-color: transparent;
+		outline:hidden;
+		border: none;
+		margin-top:60px;
+	}
+	
+	#full-width {
+		margin: 0;
+		display: flex;
+		align-items: center;
+	justify-content: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	}
+	
+	div.gallery {
+  	background-color: rgba(211, 159, 135, 0.5);
+	margin-bottom: 15px;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+		width: 100%;
+	
+	}
+	
+
+	div.gallery:hover {
+	opacity: 0.5;
+   
+	}
+
+
+div.gallery img {
+    width: 300px;
+    height: 100%;
+	margin: 0;
+}
+	
+
+#doggy div.gallery {
+	width: 200px;
+}
+#doggy div.gallery img {
+	height:350px;
+	width: 200px;
+}
+
+div.desc {
+	margin-bottom: 20px;
+    text-align: center;
+	background-color: rgba(211, 159, 135, 0.2);
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	opacity: 0.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#work .full-width .responsive {
+    padding: 0 5px;
+    float: left;
+    width: 30%;
+	height: auto;
+}
+doggy .responsive {
+    padding: 0 15px;
+    float: left;
+    width: 25%;
+	height: auto;
+}
+	
+	#doggy {
+		display:none;
+	}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	
+	#contact {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background-color: #fff;
+	}
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
